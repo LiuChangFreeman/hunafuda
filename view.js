@@ -410,7 +410,7 @@ class Messenger {
     var div = document.getElementById("finalcontainer");
     if(model.player1.score > model.player0.score){
       if(spmanager.awardSpecials())
-        msg.textContent = "千秋\n戏王";
+        msg.textContent = "你就是牌王";
       else
         msg.textContent = "你赢了";
       sound.win();
@@ -420,7 +420,7 @@ class Messenger {
       sound.lose();
     }
     else {
-      msg.textContent = "难得\n糊涂";
+      msg.textContent = "难得糊涂";
       sound.draw();
     }
     document.getElementById("restart").addEventListener("click", controller.restart);
@@ -462,7 +462,7 @@ class Messenger {
   }
   notifyAward(minscore, spid){
     var banner = document.getElementById("infobanner");
-    var levels = ["炤", "洛", "危"];
+    var levels = ["初", "中", "高"];
     messenger.setBannerHeadline(["恭喜对战", levels[AI_LEVEL-1]+"级AI", "超过" , minscore,"分，请抱好"]);
     var poster =  banner.querySelector(".bannercards").appendChild(document.createElement("div"));
     poster.classList.add("postercard");
@@ -613,7 +613,7 @@ function setup(){
   view = new View();
   oppoinfo = new TableInfoView(model.player0);
   playerinfo = new TableInfoView(model.player1);
-  var defaults = ["p12", "voiceon", "ai2", "sp1"];
+  var defaults = ["p12", "voiceoff", "ai2"];
   var configs = getCookie("configurations");
   if(configs.length == 0) configs = defaults;
   for(var i = 0; i < configs.length; i++)

@@ -1,7 +1,7 @@
 <!DOCUMENTTYPE html>
 <html>
 <head>
-	<title>千秋戏</title>
+	<title>月芽花札</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="height=device-height,
                       width=device-width, initial-scale=1.0,
@@ -21,34 +21,24 @@
 		<div id="packinput" class="segmented-control" style="width: 100%; color: #281B11">
 			<input type="radio" name="version" id="p12">
 			<input type="radio" name="version" id="p13" disabled="true">
-			<input type="radio" name="version" id="p23" disabled="true">
-			<label for="p12" data-value="1+2 代人物">1+2</label>
-			<label for="p13" data-value="1+3 代人物">1+3</label>
-			<label for="p23" data-value="2+3 代人物">2+3</label>
+			<!--<input type="radio" name="version" id="p23" disabled="true">-->
+			<label for="p12" data-value="第一版">最初版</label>
+			<label for="p13" data-value="第二版">待更新</label>
+			<!--<label for="p23" data-value="2+3 代人物">2+3</label>-->
 		</div>
 		<div id="voiceinput" class="segmented-control" style="width: 100%; color: #281B11">
-			<input type="radio" name="voice" id="voiceon">
+			<input type="radio" name="voice" id="voiceon"  disabled="true">
 			<input type="radio" name="voice" id="voiceoff">
 			<label for="voiceon" data-value="完成组合时播放语音">语音</label>
-			<label for="voiceoff" data-value="完成组合时BlueBlue">无语音</label>
+			<label for="voiceoff" data-value="完成组合时不播放语音">无语音</label>
 		</div>
 		<div id="aiinput" class="segmented-control" style="width: 100%; color: #281B11">
 			<input type="radio" name="ai" id="ai1">
 			<input type="radio" name="ai" id="ai2">
 			<input type="radio" name="ai" id="ai3" >
-			<label for="ai1" data-value="温和亲切的AI">炤级AI</label>
-			<label for="ai2" data-value="沉迷种田的AI">洛级AI</label>
-			<label for="ai3" data-value="恶意满满的AI">危级AI</label>
-		</div>
-		<div id="spinput" class="segmented-control" style="width: 100%; color: #281B11">
-			<input type="radio" name="sp" id="sp0">
-			<input type="radio" name="sp" id="sp1">
-			<input type="radio" name="sp" id="sp2">
-			<input type="radio" name="sp" id="sp3">
-			<label for="sp0" data-value="AI不想使用珍稀牌">AI无珍稀牌</label>
-			<label for="sp1" data-value="AI珍稀牌量是你一半">AI 1/2珍稀牌</label>
-			<label for="sp2" data-value="AI珍稀牌量和你一样">AI等量珍稀牌</label>
-			<label for="sp3" data-value="AI拥有所有珍稀牌">AI全珍稀牌</label>
+			<label for="ai1" data-value="初级AI">新手</label>
+			<label for="ai2" data-value="中级AI">普通</label>
+			<label for="ai3" data-value="高级AI">高级</label>
 		</div>
 		<div id="comfirmSetting" class="confirmbutton">确认此设置</div>
 	</div>

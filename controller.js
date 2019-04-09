@@ -267,9 +267,9 @@ class Controller{
     var ai = getInput("aiinput");
     AI_LEVEL = parseInt(ai.charAt(2));
     COMBO_VOICE = getInput("voiceinput");
-    var sp = getInput("spinput");
+    var sp = "sp0";
     SP_CARDS = parseInt(sp.charAt(2));
-    setCookie("configurations", [pack, ai, COMBO_VOICE, sp]);
+    setCookie("configurations", [pack, COMBO_VOICE,ai]);
     spmanager.setup();
     controller.gameinit();
   }
@@ -278,8 +278,7 @@ class Controller{
       controller.gamestart();
     else{
       playerinfo.showSpecialsPick();
-      showPage("spselection");
-      document.getElementById("gamestart").addEventListener("click", controller.gamestart);
+      controller.gamestart();
     }
     window.scrollTo(0,document.body.scrollHeight);
   }

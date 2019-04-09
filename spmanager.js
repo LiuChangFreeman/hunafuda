@@ -1,7 +1,6 @@
 SPECIAL_CHAR_LIST = [
   ["blts1b", "fqx1a", "hy1a", "ly1a", "oysg1a", "qy1a","xl1a", "yqs1a", "fls1a", "xf1a", "blts1a", "fqx1b", "fls1b", "xl1b", "hy1b", "yqs1b"],
-  ["hy2a", "qhzr2a", "sx2a", "sy2a", "wry2b", "xy2a", "xyz2a", "xyz2b", "ywy2a", "ywy2b", "yq2a", "wry2a", "ar2b", "ar2a"],
-  []
+  ["hy2a", "qhzr2a", "sx2a", "sy2a", "wry2b", "xy2a", "xyz2a", "xyz2b", "ywy2a", "ywy2b", "yq2a", "wry2a", "ar2b", "ar2a"]
 ];
 
 
